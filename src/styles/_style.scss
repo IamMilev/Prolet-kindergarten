@@ -1,0 +1,352 @@
+
+
+// Buttons
+
+.btn-lg {
+  min-width: 160px;
+  line-height: 1.1;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.mw-1200 {
+  max-width: 1200px;
+}
+
+.min-h-100 {
+  min-height: 100%;
+}
+
+h1 {
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-size: 50px;
+}
+
+nav {
+  font-family: 'Calibri', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 600;
+
+  .navbar-brand svg {
+    height: 60px;
+    width: auto;
+    @include media-breakpoint-down(md) {
+      height: 40px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 0.5rem 2.5rem !important;
+  }
+
+  .navbar-collapse {
+    .navbar-nav a {
+      &:first-child {
+        color: $orange;
+
+        &:hover {
+            color: darken($orange, 10%);
+        }
+      }
+
+      &:nth-child(2) {
+        color: darken($purple, 10%);
+        &:hover {
+            color: darken($purple, 20%);
+        }
+      }
+      &:nth-child(3) {
+        color: darken($green, 30%);
+        &:hover {
+            color: darken($green, 40%);
+        }
+      }
+
+      &:last-child {
+        color: $red;
+        &:hover {
+            color: darken($red, 10%);
+        }
+      }
+    }
+
+    a {
+      margin-left: 1.5rem;
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.dots {
+  position: absolute;
+  transform: scale(1.2);
+
+  .dot {
+    width: 40px;
+    height: 40px;
+    background: $orange;
+    border-radius: 20px;
+  }
+
+  .one {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -100px;
+    background: $dark-orange;
+  }
+  .two {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -70px;
+    left: 50px;
+    background: #4fd8d5;
+    filter: blur(2px);
+  }
+  .three {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: $purple;
+    top: 0px;
+    left: 0px;
+    filter: blur(4px);
+    border-radius: 40px;
+  }
+  .four {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -250px;
+    right: -390px;
+    background: $light-orange;
+  }
+  .five {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -385px;
+    bottom: -346px;
+  }
+  .six {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -410px;
+    bottom: -200px;
+    background: $green;
+    filter: blur(2px);
+  }
+  .seven {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -320px;
+    bottom: -280px;
+    border-radius: 40px;
+    background: $purple;
+    filter: blur(4px);
+  }
+}
+
+.landing {
+  height: 100vh;
+
+  .container {
+    padding: 0 40px;
+    z-index: 10;
+
+      .play {
+        color: $purple;
+      }
+      .learn {
+        color: $green;
+      }
+      .se {
+        color: $light-orange;
+      }
+      .fun {
+        color: $dark-orange;
+      }
+
+    .paragraph {
+      font-size: 18px;
+    }
+    .btn-sign-up {
+      min-width: 164px;
+      height: 38px;
+      background: $green;
+      color: white;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px #0000001a;
+      }
+    }
+    a {
+      color: $green;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.05);
+      }
+    }
+
+    .image-two {
+      width: inherit;
+      img {
+        width: inherit;
+      }
+    }
+    .images {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      z-index: -1;
+
+      .img-one {
+        top: -30%;
+        height: auto;
+        width: 70%;
+      }
+      .img-three {
+        right: 0px;
+        bottom: -30%;
+        height: auto;
+        width: 80%;
+      }
+    }
+  }
+}
+
+.information {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  .section-heading {
+    font-weight: bold;
+    font-size: 2rem;
+    color: $purple;
+    margin-bottom: 0;
+  }
+  .section-paragraph {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 40px;
+  }
+
+  .info-col {
+    padding-left: 30px;
+    padding-right: 30px;
+    .info-image {
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.care {
+  height: 80vh;
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transform: rotate(5deg);
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: $purple;
+    margin-bottom: 0;
+  }
+  .sub-header {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 40px;
+  }
+
+  ul {
+    font-size: 1.2rem;
+    list-style-image: url(/assets/images/check.svg);
+  }
+}
+
+.prefooter {
+  .one {
+    top: -60px;
+    left: -60px;
+    background: $light-orange;
+    filter: blur(2px);
+  }
+  .two {
+    top: -35px;
+    left: 90px;
+    background: $light-orange;
+  }
+  .three {
+    background: $light-orange;
+    top: 80px;
+    left: 10px;
+  }
+  .four {
+    bottom: 40px;
+    right: -800px;
+    background: $light-orange;
+    filter: blur(2px);
+  }
+  .five {
+    right: -770px;
+    bottom: -56px;
+    background: $light-orange;
+    filter: blur(2px);
+  }
+  .six {
+    right: -800px;
+    bottom: -150px;
+    background: $light-orange;
+  }
+  .seven {
+    right: -660px;
+    bottom: -140px;
+    background: $light-orange;
+  }
+}
+
+.news {
+  figure .img-news {
+    width: 100%;
+    padding: 20px 50px;
+  }
+
+  h2:first-child {
+    color: $indigo;
+  }
+}
