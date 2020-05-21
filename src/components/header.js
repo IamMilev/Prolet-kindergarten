@@ -60,7 +60,7 @@ const Header = ({ siteTitle }) => (
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
+        <Nav className="ml-auto text-right">
           <Nav.Link href="/about">Услуги</Nav.Link>
           <Nav.Link href="/page-2/">За нас</Nav.Link>
           <Nav.Link href="#link">Забавление</Nav.Link>
