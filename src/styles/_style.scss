@@ -17,7 +17,7 @@
 
 h1, h2, h3, h4, h5 {
   font-family: 'Calibri';
-  font-weight: bold;
+  font-weight: 600 !important;
 }
 
 h1 {
@@ -296,8 +296,6 @@ nav {
 }
 
 .care {
-  height: 80vh;
-
   figure img {
     width: 100%;
     height: auto;
@@ -319,8 +317,9 @@ nav {
   }
 
   ul {
-    font-size: 1.2rem;
-    //list-style-image: url(/assets/images/check.svg);
+    font-size: 1rem;
+    padding-inline-start: 20px;
+    list-style-image: url(../images/check.svg);
   }
 }
 

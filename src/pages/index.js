@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -39,17 +39,17 @@ const IndexPage = () => (
                     </h1>
                     <p className="px-4 pl-lg-0 pr-lg-5 mb-lg-4">Ние ще добавим и малко магия в живота на малчуганите</p>
                     <Button className="btn-sign-up" variant="green">Запиши се</Button>
-                    <a href="/" className="mt-2 mt-lg-0 ml-lg-4 d-block d-lg-inline-block">Виж още</a>
+                    <a href="#more" className="mt-2 mt-lg-0 ml-lg-4 d-block d-lg-inline-block">Виж още</a>
                 </Col>
             </Row>
         </Container>
     </section>
 
-    <section>
+    <section id="more" className="pt-80 pb-40 pb-lg-80">
         <Container>
             <Row>
                 <Col sm={12}>
-                    <div className="text-center mb-5">
+                    <div className="text-center mb-40">
                         <h2 className="text-primary font-weight-bold">Нашите услуги</h2>
                         <p>Всички грижи за вашето дете</p>
                     </div>
@@ -61,7 +61,7 @@ const IndexPage = () => (
                         </svg>
                     </div>
                     <h3>Храна</h3>
-                    <p>
+                    <p className="mb-40">
                         Храненето е едно от най-важните неща за правилното
                         израстване на вашето дете и ние ще се погрижим
                         те да получат най-добрата храна.
@@ -81,7 +81,7 @@ const IndexPage = () => (
                         </svg>
                     </div>
                     <h3>Храна</h3>
-                    <p>
+                    <p className="mb-40">
                         Храненето е едно от най-важните неща за правилното
                         израстване на вашето дете и ние ще се погрижим
                         те да получат най-добрата храна.
@@ -92,7 +92,7 @@ const IndexPage = () => (
                         <img src={funSVG} alt="Fun icon" />
                     </div>
                     <h3>Храна</h3>
-                    <p>
+                    <p className="mb-40">
                         Храненето е едно от най-важните неща за правилното
                         израстване на вашето дете и ние ще се погрижим
                         те да получат най-добрата храна.
@@ -102,15 +102,114 @@ const IndexPage = () => (
         </Container>
     </section>
 
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page two.</Link>
-    <br/>
-    <Link to="/about">Go to about.</Link>
+    <section className="care py-40 py-lg-120">
+        <Container>
+            <Row>
+                <Col sm={12} lg={6}>
+                    <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
+                        <Image />
+                    </div>
+                </Col>
+                <Col sm={12} lg={6} className="pl-lg-40">
+                    <h2>Грижа за детето</h2>
+                    <h5 className="mb-20 mb-lg-40">Всички грижи за вашето дете</h5>
+                    <p>
+                        Основанa през 1977, детска градина “Пролет”
+                        е една от първите в Димитровград, с най-много традиции
+                        и един пример за полагане на основите на възпитание на
+                        всяко дете. Създадохме и поддържаме благоприятна,
+                        привлекателна, актуална и мобилна среда, съчетаваща традициите
+                        и достиженията на съвременното предучилищно възпитание,
+                        в която деца и възрастни ще бъдат в работеща емоционално-
+                        позитивна атмосфера.
+                    </p>
+                    <Row>
+                        <Col xs={6} className="pr-0">
+                            <ul>
+                                <li>3 Филиала</li>
+                                <li>Над 20 учители</li>
+                                <li>10 групи за деца</li>
+                            </ul>
+                        </Col>
+                        <Col xs={6} className="pl-0">
+                            <ul>
+                                <li>Отопляем басейн</li>
+                                <li>Зала за физкултура</li>
+                                <li>Парк с площадка</li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </Container>
+    </section>
+
+    <section className="care py-40 py-lg-120">
+          <Container>
+              <Row>
+                  <Col sm={12} lg={{ span: 6, order: 12 }}>
+                      <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
+                          <Image />
+                      </div>
+                  </Col>
+                  <Col sm={12} lg={{ span: 6, order: 1 }}>
+                      <h2>Грижа за детето</h2>
+                      <h5 className="mb-20 mb-lg-40">Всички грижи за вашето дете</h5>
+                      <p>
+                          Основанa през 1977, детска градина “Пролет”
+                          е една от първите в Димитровград, с най-много традиции
+                          и един пример за полагане на основите на възпитание на
+                          всяко дете. Създадохме и поддържаме благоприятна,
+                          привлекателна, актуална и мобилна среда, съчетаваща традициите
+                          и достиженията на съвременното предучилищно възпитание,
+                          в която деца и възрастни ще бъдат в работеща емоционално-
+                          позитивна атмосфера.
+                      </p>
+                      <Row>
+                          <Col xs={6} className="pr-0">
+                              <ul>
+                                  <li>3 Филиала</li>
+                                  <li>Над 20 учители</li>
+                                  <li>10 групи за деца</li>
+                              </ul>
+                          </Col>
+                          <Col xs={6} className="pl-0">
+                              <ul>
+                                  <li>Отопляем басейн</li>
+                                  <li>Зала за физкултура</li>
+                                  <li>Парк с площадка</li>
+                              </ul>
+                          </Col>
+                      </Row>
+                  </Col>
+
+              </Row>
+          </Container>
+      </section>
+
+      <section className="bg-beige py-40 py-lg-80">
+          <Container>
+              <Row>
+                  <Col sm={12}>
+                      <div className={"text-center"}>
+                          <h2 className="text-dark-purple">Запишете детето си сега</h2>
+                          <h5>Детска градина №4</h5>
+                          <Button variant={"dark-orange"} className={"text-white mt-20"}>Заявление</Button>
+                      </div>
+                  </Col>
+              </Row>
+          </Container>
+      </section>
+
+      {/*<h1>Hi people</h1>*/}
+    {/*<p>Welcome to your new Gatsby site.</p>*/}
+    {/*<p>Now go build something great.</p>*/}
+    {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>*/}
+    {/*  <Image />*/}
+    {/*</div>*/}
+    {/*<Link to="/page-2/">Go to page two.</Link>*/}
+    {/*<br/>*/}
+    {/*<Link to="/about">Go to about.</Link>*/}
   </Layout>
 )
 
