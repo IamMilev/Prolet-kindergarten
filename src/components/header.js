@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <Navbar bg="transparent" expand="lg" className="mx-auto mw-1200">
+    <Navbar fixed="top" bg="transparent" expand="lg" className="mx-auto mw-1200">
       <Navbar.Brand href="/">
         <svg width="197" height="75" viewBox="0 0 197 75" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0)">
