@@ -50,7 +50,7 @@ const IndexPage = () => (
 
     <section id="more" className="pt-80 pb-40 pb-lg-80">
         <Container>
-            <Row>
+            <Row data-sal="slide-up" data-sal-duration="1000">
                 <Col sm={12}>
                     <div className="text-center mb-40">
                         <h2 className="text-primary font-weight-bold">Нашите услуги</h2>
@@ -108,12 +108,12 @@ const IndexPage = () => (
     <section className="care py-40 py-lg-120">
         <Container>
             <Row>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
                         <CImage />
                     </div>
                 </Col>
-                <Col sm={12} lg={6} className="pl-lg-40">
+                <Col sm={12} lg={6} className="pl-lg-40" data-sal="slide-up" data-sal-duration="1000">
                     <h2>Грижа за детето</h2>
                     <h5 className="mb-20 mb-lg-40">Всички грижи за вашето дете</h5>
                     <p>
@@ -148,12 +148,12 @@ const IndexPage = () => (
     <section className="care py-40 py-lg-120">
           <Container>
               <Row>
-                  <Col sm={12} lg={{ span: 6, order: 12 }}>
+                  <Col sm={12} lg={{ span: 6, order: 12 }} data-sal="slide-up" data-sal-duration="1000">
                       <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
                           <SImage />
                       </div>
                   </Col>
-                  <Col sm={12} lg={{ span: 6, order: 1 }}>
+                  <Col sm={12} lg={{ span: 6, order: 1 }} data-sal="slide-up" data-sal-duration="1000">
                       <h2>Спорт и изкуство</h2>
                       <h5 className="mb-20 mb-lg-40">Забавление и радост</h5>
                       <p>
@@ -187,7 +187,7 @@ const IndexPage = () => (
     <section className="py-80 py-lg-120">
         <Container>
             <Row>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto" style={{ maxWidth: `400px` }}>
                         <Image />
                     </div>
@@ -198,7 +198,7 @@ const IndexPage = () => (
                         Текст с размер до 30 символа.
                     </p>
                 </Col>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <Row>
                         <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
                             <div className="m-auto" style={{ width: `230px` }}>
@@ -242,7 +242,7 @@ const IndexPage = () => (
         </Container>
     </section>
 
-    <section className="bg-beige py-40 py-lg-80">
+    <section className="bg-beige py-40 py-lg-80"  data-sal="slide-up" data-sal-duration="1000">
           <Container>
               <Row>
                   <Col sm={12}>

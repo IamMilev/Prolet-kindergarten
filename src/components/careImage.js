@@ -18,7 +18,7 @@ const CImage = () => {
     query {
       elephant: file(relativePath: { eq: "elephant.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
