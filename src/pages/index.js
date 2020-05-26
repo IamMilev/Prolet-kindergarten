@@ -3,6 +3,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import CImage from "../components/careImage"
+import SImage from "../components/sportImage"
 import SEO from "../components/seo"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -40,7 +42,7 @@ const IndexPage = () => (
                     </h1>
                     <p className="px-4 pl-lg-0 pr-lg-5 mb-lg-4">Ние ще добавим и малко магия в живота на малчуганите</p>
                     <a href={fileZayavlenie} target="_blank" rel="noreferrer" className="btn btn-sign-up bg-green">Запиши се</a>
-                    <a href={"#more"} className="mt-2 mt-lg-0 ml-lg-4 d-block d-lg-inline-block">Виж още</a>
+                    <a href="#more" className="mt-2 mt-lg-0 ml-lg-4 d-block d-lg-inline-block">Виж още</a>
                 </Col>
             </Row>
         </Container>
@@ -108,7 +110,7 @@ const IndexPage = () => (
             <Row>
                 <Col sm={12} lg={6}>
                     <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
-                        <Image />
+                        <CImage />
                     </div>
                 </Col>
                 <Col sm={12} lg={6} className="pl-lg-40">
@@ -148,7 +150,7 @@ const IndexPage = () => (
               <Row>
                   <Col sm={12} lg={{ span: 6, order: 12 }}>
                       <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
-                          <Image />
+                          <SImage />
                       </div>
                   </Col>
                   <Col sm={12} lg={{ span: 6, order: 1 }}>
