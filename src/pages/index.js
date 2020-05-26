@@ -15,7 +15,7 @@ import fileZayavlenie from "../files/zaqvlenie.pdf"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Начало" />
 
 
     <div className="landing-bg">
