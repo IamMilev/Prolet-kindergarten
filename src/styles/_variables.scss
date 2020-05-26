@@ -44,6 +44,7 @@ $dark-orange: #ff944f !default;
 $orange: #d16764 !default;
 $light-orange: #f7b968 !default;
 $beige: #ffe3af !default;
+$dark-beige: #ffd88f !default;
 $yellow: #ffc107 !default;
 $green: #90ba60 !default;
 $teal: #20c997 !default;
@@ -67,6 +68,7 @@ $colors: map-merge(
                         'gray': $gray-600,
                         'gray-dark': $gray-800,
                         'beige': $beige,
+                        'dark-beige': $dark-beige,
                         'dark-purple': $dark-purple,
                         'dark-orange': $dark-orange,
                 ),
@@ -95,6 +97,7 @@ $theme-colors: map-merge(
                         'light': $light,
                         'dark': $dark,
                         'beige': $beige,
+                        'dark-beige': $dark-beige,
                         'green': $green,
                         'purple': $purple,
                         'dark-purple': $dark-purple,
