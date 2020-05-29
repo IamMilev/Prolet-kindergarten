@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = ({ siteTitle }) => (
   <header>
@@ -64,11 +65,17 @@ const Header = ({ siteTitle }) => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto text-right">
           <Nav.Link>
-            <Link to="/about">Услуги</Link>
+            <div onClick={() => scrollTo('#more')} onKeyDown={() => scrollTo('#more')} role="button" tabIndex={0}>Услугите</div>
           </Nav.Link>
-          <Nav.Link >За нас</Nav.Link>
-          <Nav.Link >Забавление</Nav.Link>
-          <Nav.Link >Информация</Nav.Link>
+          <Nav.Link >
+            <div onClick={() => scrollTo('#care')} onKeyDown={() => scrollTo('#care')} role="button" tabIndex={0}>За нас</div>
+          </Nav.Link>
+          <Nav.Link >
+            <div onClick={() => scrollTo('#fun')} onKeyDown={() => scrollTo('#fun')} role="button" tabIndex={0}>Забавление</div>
+          </Nav.Link>
+          <Nav.Link >
+            <div onClick={() => scrollTo('#news')} onKeyDown={() => scrollTo('#news')} role="button" tabIndex={0}>Новини</div>
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

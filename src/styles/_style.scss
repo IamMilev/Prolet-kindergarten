@@ -8,7 +8,7 @@
 }
 
 .mw-1200 {
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
 
 .min-h-100 {
@@ -27,6 +27,10 @@ h1 {
   @include media-breakpoint-up(lg) {
     font-size: 3.125rem;
   }
+}
+
+[role="button"]:focus {
+  outline: none;
 }
 
 nav {
@@ -58,12 +62,24 @@ nav {
         &:hover {
             color: darken($orange, 10%);
         }
+
+
+        &:focus {
+          color: $orange;
+          outline: none;
+        }
       }
 
       &:nth-child(2) {
         color: darken($purple, 10%);
+
         &:hover {
             color: darken($purple, 20%);
+        }
+
+        &:focus {
+          color: darken($purple, 10%);
+          outline: none;
         }
       }
       &:nth-child(3) {
@@ -71,12 +87,20 @@ nav {
         &:hover {
             color: darken($green, 40%);
         }
+        &:focus {
+          color: darken($green, 10%);
+          outline: none;
+        }
       }
 
       &:last-child {
         color: $red;
         &:hover {
             color: darken($red, 10%);
+        }
+        &:focus {
+          color: darken($red, 10%);
+          outline: none;
         }
       }
     }
@@ -96,7 +120,7 @@ nav {
       }
     }
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       position: absolute;
       right: 0px;
       top: 60px;
