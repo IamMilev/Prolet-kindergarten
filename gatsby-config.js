@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Prolet`,
+    title: `ДГ Пролет №4`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Georgi Milev`,
   },
   plugins: [
+    `gatsby-plugin-scroll-reveal`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {

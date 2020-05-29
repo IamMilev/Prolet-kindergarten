@@ -3,18 +3,20 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
+import CImage from "../components/careImage"
+import SImage from "../components/sportImage"
 import SEO from "../components/seo"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Button from "react-bootstrap/Button"
+// import Button from "react-bootstrap/Button"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import funSVG from "../images/fun.svg"
 import fileZayavlenie from "../files/zaqvlenie.pdf"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-
+    <SEO title="Начало" />
 
     <div className="landing-bg">
           <svg width="1055" height="816" viewBox="0 0 1055 816" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +25,7 @@ const IndexPage = () => (
               </g>
           </svg>
       </div>
-    <section className="landing d-flex align-items-center justify-content-center">
+    <section className="landing d-flex align-items-center justify-content-center pt-80">
         <Container className="mw-1200 px-3">
             <Row className="align-items-center justify-content-center">
                 <Col md={12} lg={{ span: 8, order:12 }} >
@@ -40,15 +42,15 @@ const IndexPage = () => (
                     </h1>
                     <p className="px-4 pl-lg-0 pr-lg-5 mb-lg-4">Ние ще добавим и малко магия в живота на малчуганите</p>
                     <a href={fileZayavlenie} target="_blank" rel="noreferrer" className="btn btn-sign-up bg-green">Запиши се</a>
-                    <a href={"#more"} className="mt-2 mt-lg-0 ml-lg-4 d-block d-lg-inline-block">Виж още</a>
+                    <div onClick={() => scrollTo('#more')} onKeyDown={() => scrollTo('#more')} role="button" tabIndex={0} className="mt-2 mt-lg-0 ml-lg-4 d-block d-lg-inline-block">Виж още</div>
                 </Col>
             </Row>
         </Container>
     </section>
 
     <section id="more" className="pt-80 pb-40 pb-lg-80">
-        <Container>
-            <Row>
+        <Container className="mw-1200">
+            <Row data-sal="slide-up" data-sal-duration="1000">
                 <Col sm={12}>
                     <div className="text-center mb-40">
                         <h2 className="text-primary font-weight-bold">Нашите услуги</h2>
@@ -103,17 +105,17 @@ const IndexPage = () => (
         </Container>
     </section>
 
-    <section className="care py-40 py-lg-120">
-        <Container>
+    <section id="care" className="care py-40 py-lg-120">
+        <Container className="mw-1200">
             <Row>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
-                        <Image />
+                        <CImage />
                     </div>
                 </Col>
-                <Col sm={12} lg={6} className="pl-lg-40">
-                    <h2>Грижа за детето</h2>
-                    <h5 className="mb-20 mb-lg-40">Всички грижи за вашето дете</h5>
+                <Col sm={12} lg={6} className="pl-lg-40" data-sal="slide-up" data-sal-duration="1000">
+                    <h2>Кратка история</h2>
+                    <h5 className="mb-20 mb-lg-40">55 години грижа и любов за децата</h5>
                     <p>
                         ДГ № 4 е обединение на три сгради, както следва:
                         „Пролет“ с адрес гр. Димитровград ул. „Капитан Петко войвода“ №
@@ -143,15 +145,15 @@ const IndexPage = () => (
         </Container>
     </section>
 
-    <section className="care py-40 py-lg-120">
-          <Container>
+    <section id="fun" className="care py-40 py-lg-120">
+          <Container className="mw-1200">
               <Row>
-                  <Col sm={12} lg={{ span: 6, order: 12 }}>
+                  <Col sm={12} lg={{ span: 6, order: 12 }} data-sal="slide-up" data-sal-duration="1000">
                       <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
-                          <Image />
+                          <SImage />
                       </div>
                   </Col>
-                  <Col sm={12} lg={{ span: 6, order: 1 }}>
+                  <Col sm={12} lg={{ span: 6, order: 1 }} data-sal="slide-up" data-sal-duration="1000">
                       <h2>Спорт и изкуство</h2>
                       <h5 className="mb-20 mb-lg-40">Забавление и радост</h5>
                       <p>
@@ -182,10 +184,10 @@ const IndexPage = () => (
           </Container>
       </section>
 
-    <section className="py-80 py-lg-120">
-        <Container>
+    <section id="news" className="py-80 py-lg-120">
+        <Container className="mw-1200">
             <Row>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto" style={{ maxWidth: `400px` }}>
                         <Image />
                     </div>
@@ -196,7 +198,7 @@ const IndexPage = () => (
                         Текст с размер до 30 символа.
                     </p>
                 </Col>
-                <Col sm={12} lg={6}>
+                <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <Row>
                         <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
                             <div className="m-auto" style={{ width: `230px` }}>
@@ -240,30 +242,20 @@ const IndexPage = () => (
         </Container>
     </section>
 
-    <section className="bg-beige py-40 py-lg-80">
+    <section className="bg-beige py-40 py-lg-80"  data-sal="slide-up" data-sal-duration="1000">
           <Container>
               <Row>
                   <Col sm={12}>
                       <div className={"text-center"}>
                           <h2 className="text-dark-purple">Запишете детето си сега</h2>
                           <h5>Детска градина №4</h5>
-                          <Button variant={"dark-orange"} className={"text-white mt-20"}>Заявление</Button>
+                          <a href={fileZayavlenie} target="_blank" rel="noreferrer" className="btn btn-sign-up bg-dark-orange text-white mt-20">Заявление</a>
                       </div>
                   </Col>
               </Row>
           </Container>
       </section>
 
-
-      {/*<h1>Hi people</h1>*/}
-    {/*<p>Welcome to your new Gatsby site.</p>*/}
-    {/*<p>Now go build something great.</p>*/}
-    {/*<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>*/}
-    {/*  <Image />*/}
-    {/*</div>*/}
-    {/*<Link to="/page-2/">Go to page two.</Link>*/}
-    {/*<br/>*/}
-    {/*<Link to="/about">Go to about.</Link>*/}
   </Layout>
 )
 
