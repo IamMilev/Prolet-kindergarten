@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -9,7 +9,6 @@ import SEO from "../components/seo"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-// import Button from "react-bootstrap/Button"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import funSVG from "../images/fun.svg"
 import fileZayavlenie from "../files/zaqvlenie.pdf"
@@ -145,6 +144,23 @@ const IndexPage = () => (
         </Container>
     </section>
 
+    <section className="gallery-section">
+        <Container>
+            <Row>
+                <Col md={12} className="text-center" data-sal="slide-up" data-sal-duration="1000">
+                    <div className="wrapper">
+                        <h2>Насладете се на галерията ни</h2>
+                        <p className="mb-30">
+                            Може да разгледате снимки на събития, <br/>
+                            красиви проекти и условията, които предлагаме
+                        </p>
+                        <Link to="/gallery">Към Галерията</Link>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    </section>
+
     <section id="fun" className="care py-40 py-lg-120">
           <Container className="mw-1200">
               <Row>
@@ -163,22 +179,7 @@ const IndexPage = () => (
                           Освен това запознаваме децата с чуждите езици. Преподаваме и
                           поддържаме интереса им към английският език.
                       </p>
-                      <Row>
-                          <Col xs={6} className="pr-0">
-                              <ul>
-                                  <li>3 Филиала</li>
-                                  <li>Над 20 учители</li>
-                                  <li>10 групи за деца</li>
-                              </ul>
-                          </Col>
-                          <Col xs={6} className="pl-0">
-                              <ul>
-                                  <li>Отопляем басейн</li>
-                                  <li>Зала за физкултура</li>
-                                  <li>Парк с площадка</li>
-                              </ul>
-                          </Col>
-                      </Row>
+                      <Link to="/gallery">Към Галерия <span>→</span></Link>
                   </Col>
               </Row>
           </Container>
@@ -204,7 +205,7 @@ const IndexPage = () => (
                             <div className="m-auto" style={{ width: `230px` }}>
                                 <Image />
                             </div>
-                            <div className="pl-lg-40" style={{ 'flex-shrink': `2`}}>
+                            <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
                                 <h2>Новина номер 2</h2>
                                 <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
                                     Текст с размер до 30 символа.
@@ -216,7 +217,7 @@ const IndexPage = () => (
                             <div className="m-auto" style={{ width: `230px` }}>
                                 <Image />
                             </div>
-                            <div className="pl-lg-40" style={{ 'flex-shrink': `2`}}>
+                            <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
                                 <h2>Новина номер 3</h2>
                                 <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
                                     Текст с размер до 30 символа.
@@ -228,7 +229,7 @@ const IndexPage = () => (
                             <div className="m-auto" style={{ width: `230px` }}>
                                 <Image />
                             </div>
-                            <div className="pl-lg-40" style={{ 'flex-shrink': `2`}}>
+                            <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
                                 <h2>Новина номер 4</h2>
                                 <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
                                     Текст с размер до 30 символа.

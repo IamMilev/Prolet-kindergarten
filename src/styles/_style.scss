@@ -1,4 +1,7 @@
-
+body {
+  color: black !important;
+  background-color: white !important;
+}
 
 // Buttons
 
@@ -333,6 +336,7 @@ nav {
     color: $purple;
     margin-bottom: 0;
   }
+
   .sub-header {
     font-weight: normal;
     font-size: 1.2rem;
@@ -344,6 +348,25 @@ nav {
     font-size: 1rem;
     padding-inline-start: 20px;
     list-style-image: url(../images/check.svg);
+  }
+
+  a {
+    font-size: $h4-font-size;
+    font-weight: 600;
+    color: $warning;
+
+    span {
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: darken($warning, 2%);
+
+      span {
+        padding-left: 10px;
+      }
+    }
   }
 }
 
@@ -396,5 +419,52 @@ nav {
 
   h2:first-child {
     color: $indigo;
+  }
+}
+
+.gallery-section {
+  padding: 120px 0;
+
+  .wrapper {
+    background-color: lighten($blue, 15%);
+    color: white;
+    padding: 50px;
+    border-radius: 150px;
+
+    a {
+      font-size: $h5-font-size;
+      font-weight: 600;
+      color: white;
+      padding: 3px 20px 7px 20px;
+      border: 2px solid white;
+      border-radius: 20px;
+
+      &:hover {
+        text-decoration: none;
+        color: darken(white, 2%);
+      }
+    }
+
+    &:hover {
+      animation: galleryShake .5s ease;
+    }
+  }
+}
+
+@keyframes galleryShake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
