@@ -5,6 +5,7 @@ module.exports = {
     author: `Georgi Milev`,
   },
   plugins: [
+    `gatsby-theme-gallery`,
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-react-helmet`,
