@@ -7,6 +7,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = ({ siteTitle }) => (
   <header>
+    <div className="navbar-bg-blurred"/>
     <Navbar fixed="top" bg="transparent" expand="lg" className="mx-auto mw-1200">
       <Navbar.Brand>
         <Link to="/">

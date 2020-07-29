@@ -1,10 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
-import CImage from "../components/careImage"
-import SImage from "../components/sportImage"
 import SEO from "../components/seo"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -24,12 +21,13 @@ const IndexPage = () => (
               </g>
           </svg>
       </div>
+
     <section className="landing d-flex align-items-center justify-content-center pt-80">
         <Container className="mw-1200 px-3">
             <Row className="align-items-center justify-content-center">
                 <Col md={12} lg={{ span: 8, order:12 }} >
                     <div className="mx-auto" style={{ maxWidth: `550px` }}>
-                        <Image />
+                        <Image alt="First Image" filename="TheOne.png"  />
                     </div>
                 </Col>
                 <Col md={12} lg={{ span: 4, order:1 }} className="text-center text-lg-left">
@@ -109,7 +107,7 @@ const IndexPage = () => (
             <Row>
                 <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
-                        <CImage />
+                        <Image alt="Beds" filename="elephant.png"  />
                     </div>
                 </Col>
                 <Col sm={12} lg={6} className="pl-lg-40" data-sal="slide-up" data-sal-duration="1000">
@@ -166,7 +164,7 @@ const IndexPage = () => (
               <Row>
                   <Col sm={12} lg={{ span: 6, order: 12 }} data-sal="slide-up" data-sal-duration="1000">
                       <div className="mx-auto mb-40" style={{ maxWidth: `550px` }}>
-                          <SImage />
+                          <Image alt="Pool" filename="pool.png"  />
                       </div>
                   </Col>
                   <Col sm={12} lg={{ span: 6, order: 1 }} data-sal="slide-up" data-sal-duration="1000">
@@ -190,50 +188,58 @@ const IndexPage = () => (
             <Row>
                 <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto" style={{ maxWidth: `400px` }}>
-                        <Image />
+                        <Image alt="First Image" filename="proekt-apspo.JPG"  />
                     </div>
-                    <h2 className="mt-20">Новина номер 1</h2>
-                    <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
-                        Текст с размер до 30 символа.
-                        Текст с размер до 30 символа.
-                        Текст с размер до 30 символа.
+                    <h2 className="mt-20">Проект за развитие</h2>
+                    <p>
+                        ДГ № 4 работи по проект BG05M2OP001-3.005-0004 „Активно
+                        приобщаване в системата на предучилищното образование“,
+                        финансиран от Оперативна програма „Наука и образование за
+                        интелигентен растеж“, съфинансирана от Европейските
+                        структурни и инвестиционни фондове.
                     </p>
                 </Col>
                 <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <Row>
                         <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
                             <div className="m-auto" style={{ width: `230px` }}>
-                                <Image />
+                                <Image alt="First Image" filename="pool.png"  />
                             </div>
                             <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
-                                <h2>Новина номер 2</h2>
-                                <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
-                                    Текст с размер до 30 символа.
-                                    Текст с размер до 30 символа.
+                                <h2>Презентация за Васил Левски</h2>
+                                <p>
+                                    През месец февруари във всички сгради се представиха
+                                    презентации за делото на Апостола на свободата Васил
+                                    Левски. Директор и учители
                                 </p>
                             </div>
                         </Col>
                         <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
                             <div className="m-auto" style={{ width: `230px` }}>
-                                <Image />
+                                <Image alt="First Image" filename="elephant.png"  />
                             </div>
                             <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
-                                <h2>Новина номер 3</h2>
-                                <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
-                                    Текст с размер до 30 символа.
-                                    Текст с размер до 30 символа.
+                                <h2>Мартенски Концерти</h2>
+                                <p>
+                                    През месец март 2020 година в ДГ №4, ще се проведат
+                                    мартенски концерти пред родителите на децата и гости от
+                                    Общинска администрация гр. Димитровград
                                 </p>
                             </div>
                         </Col>
                         <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
                             <div className="m-auto" style={{ width: `230px` }}>
-                                <Image />
+                                <Image alt="First Image" filename="pool.png"  />
                             </div>
                             <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
-                                <h2>Новина номер 4</h2>
-                                <p>Текст с размер до 30 символа. Текст с размер до 30 символа. Текст с размер до 30 символа.
-                                    Текст с размер до 30 символа.
-                                    Текст с размер до 30 символа.
+                                <h2>Празника на баба Марта</h2>
+                                <p>
+                                    На 28,02,2020г. от 10,00 ч. във Филиал 1 „Радост“ съвместно с
+                                    читалище с. Злато поле.
+                                    На 02,03,2020г. от 10,00 ч. в „Пролет“ съвместно с читалище с.
+                                    Сталево
+                                    На 02,03,2020г. от 10,00 ч. в с. Черногорово съвместно с читалище с.
+                                    Черногорово
                                 </p>
                             </div>
                         </Col>
