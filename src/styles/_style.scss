@@ -3,8 +3,24 @@ body {
   background-color: white !important;
 }
 
-// Buttons
+.navbar-bg-blurred {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  -moz-backdrop-filter: blur(30px);
+  -ms-filter-backdrop-filter: blur(30px);
+  -o-filter-backdrop-filter: blur(30px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background-color: hsla(0,0%,100%,.4);
+  height: 86px;
+  //height: 86px;
+}
 
+// Buttons
 .btn-lg {
   min-width: 160px;
   line-height: 1.1;
@@ -175,8 +191,8 @@ nav {
     height: 50px;
     position: absolute;
     background: $purple;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     filter: blur(4px);
     border-radius: 40px;
   }
