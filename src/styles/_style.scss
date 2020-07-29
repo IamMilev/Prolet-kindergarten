@@ -1,7 +1,26 @@
+body {
+  color: black !important;
+  background-color: white !important;
+}
 
+.navbar-bg-blurred {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  -moz-backdrop-filter: blur(30px);
+  -ms-filter-backdrop-filter: blur(30px);
+  -o-filter-backdrop-filter: blur(30px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background-color: hsla(0,0%,100%,.4);
+  height: 86px;
+  //height: 86px;
+}
 
 // Buttons
-
 .btn-lg {
   min-width: 160px;
   line-height: 1.1;
@@ -172,8 +191,8 @@ nav {
     height: 50px;
     position: absolute;
     background: $purple;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     filter: blur(4px);
     border-radius: 40px;
   }
@@ -333,6 +352,7 @@ nav {
     color: $purple;
     margin-bottom: 0;
   }
+
   .sub-header {
     font-weight: normal;
     font-size: 1.2rem;
@@ -344,6 +364,25 @@ nav {
     font-size: 1rem;
     padding-inline-start: 20px;
     list-style-image: url(../images/check.svg);
+  }
+
+  a {
+    font-size: $h4-font-size;
+    font-weight: 600;
+    color: $warning;
+
+    span {
+      transition: all .3s ease;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: darken($warning, 2%);
+
+      span {
+        padding-left: 10px;
+      }
+    }
   }
 }
 
@@ -396,5 +435,52 @@ nav {
 
   h2:first-child {
     color: $indigo;
+  }
+}
+
+.gallery-section {
+  padding: 120px 0;
+
+  .wrapper {
+    background-color: lighten($blue, 15%);
+    color: white;
+    padding: 50px;
+    border-radius: 150px;
+
+    a {
+      font-size: $h5-font-size;
+      font-weight: 600;
+      color: white;
+      padding: 3px 20px 7px 20px;
+      border: 2px solid white;
+      border-radius: 20px;
+
+      &:hover {
+        text-decoration: none;
+        color: darken(white, 2%);
+      }
+    }
+
+    &:hover {
+      animation: galleryShake .5s ease;
+    }
+  }
+}
+
+@keyframes galleryShake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  75% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
