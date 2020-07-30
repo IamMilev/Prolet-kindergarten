@@ -17,7 +17,25 @@ import Header from "./header"
 import { Link } from "gatsby"
 import "./layout.css"
 import Navbar from "react-bootstrap/Navbar"
-// import Navbar from "react-bootstrap/Navbar"
+import godishenPlan from "../files/godPlan.pdf"
+import tabela_apspo_20 from "../files/tabela_apspo_20.pdf"
+import graphic_kids from "../files/graphic_kids.pdf"
+import doklad_2019 from "../files/doklad_2019.pdf"
+import dekl_roditeli from "../files/dekl_roditeli.pdf"
+import izv_instruktaj from "../files/izv_instruktaj.pdf"
+import ekipi_grupi from "../files/ekipi_grupi.pdf"
+import remont_2020 from "../files/remont_2020.pdf"
+import razpr_personal from "../files/razpr_personal.pdf"
+import zld from "../files/zld.pdf"
+import otchet_kasovo_izpulnenie from "../files/otchet_kasovo_izpulnenie.pdf"
+import pddg from "../files/pddg.pdf"
+import pravilnik_deinost from "../files/pravilnik_deinost.pdf"
+import programna_sistema from "../files/programna_sistema.pdf"
+import filter from "../files/filter.pdf"
+import srpson from "../files/srpson.pdf"
+import strategiq from "../files/strategiq.pdf"
+import check_list from "../files/check_list.pdf"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -177,117 +195,113 @@ const Layout = ({ children }) => {
               <div
                 className="documents d-flex align-items-start justify-content-start flex-wrap font-size-sm"
               >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Състав</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Финансов Доклад</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Заявление за прием</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Екипи по групи</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Щатно</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >ПДДГ</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Проект "АПСПО"</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Отчет за каса</a
-                >
+                <a href={godishenPlan}
+                   target="_blank" rel="noreferrer"
+                  className="document text-decoration-none text-dark mb-1 w-100">
+                  Годишен План
+                </a>
+                <a href={tabela_apspo_20}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  АПСПО 2020
+                </a>
+                <a href={graphic_kids}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  График прием деца
+                </a>
+                <a href={doklad_2019}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  ДГ Доклад 2019
+                </a>
+                <a href={dekl_roditeli}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Декларация за родители
+                </a>
+                <a href={izv_instruktaj}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Извънреден инструктаж
+                </a>
               </div>
             </Col>
             <Col sm={12} md={6} lg={3}>
               <div className="font-weight-bold font-size-sm text-danger mb-1">
-                Регулации
-              </div>
-              <div
-                className="documents d-flex align-items-start justify-content-start flex-wrap font-size-sm"
-              >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Състав</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Финансов Доклад</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Заявление за прием</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Екипи по групи</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Щатно</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >ПДДГ</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Проект "АПСПО"</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Отчет за каса</a
-                >
-              </div>
-            </Col>
-            <Col sm={12} md={6} lg={3}>
-              <div className="font-weight-bold font-size-sm text-warning mb-1">
                 Полезна Информация
               </div>
               <div
                 className="documents d-flex align-items-start justify-content-start flex-wrap font-size-sm"
               >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Състав</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Финансов Доклад</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Заявление за прием</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Екипи по групи</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100"
-                >Щатно</a
-                >
-                <a href="/"
-                  className="document text-decoration-none text-dark mb-1 w-100">
+                <a href={ekipi_grupi}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Екипи по групи
+                </a>
+                <a href={remont_2020}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Заявка за ремонт 2020
+                </a>
+                <a href={razpr_personal}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Заповед за разпр. на Персонал
+                </a>
+                <a href={zld}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  ЗЛД
+                </a>
+                <a href={otchet_kasovo_izpulnenie}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Отчет за Касово Изпълнение
+                </a>
+                <a href={pddg}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
                   ПДДГ
                 </a>
-                <a href="/" className="document text-decoration-none text-dark mb-1 w-100">
-                  Проект "АПСПО"
+              </div>
+            </Col>
+            <Col sm={12} md={6} lg={3}>
+              <div className="font-weight-bold font-size-sm text-primary mb-1">
+                Още Информация
+              </div>
+              <div
+                className="documents d-flex align-items-start justify-content-start flex-wrap font-size-sm"
+              >
+                <a href={pravilnik_deinost}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Правилник за Дейноста
                 </a>
-                <a href="/" className="document text-decoration-none text-dark mb-1 w-100">
-                  Отчет за каса
+                <a href={programna_sistema}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Програмна Система
+                </a>
+                <a href={filter}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Филтър
+                </a>
+                <a href={srpson}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  СРПСОН
+                </a>
+                <a href={strategiq}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Стратегия за 2020
+                </a>
+                <a href={check_list}
+                   target="_blank" rel="noreferrer"
+                   className="document text-decoration-none text-dark mb-1 w-100">
+                  Чеклист за Дезинфекция
                 </a>
               </div>
             </Col>
