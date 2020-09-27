@@ -188,19 +188,33 @@ const IndexPage = () => (
             <Row>
                 <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <div className="mx-auto" style={{ maxWidth: `400px` }}>
-                        <Image alt="First Image" filename="proekt-apspo.JPG"  />
+                        <Image alt="First Image" filename="pool.png"  />
                     </div>
-                    <h2 className="mt-20">Проект за развитие</h2>
+                    <h2 className="mt-20">Национална програма за превенция</h2>
                     <p>
-                        ДГ № 4 работи по проект BG05M2OP001-3.005-0004 „Активно
-                        приобщаване в системата на предучилищното образование“,
-                        финансиран от Оперативна програма „Наука и образование за
-                        интелигентен растеж“, съфинансирана от Европейските
-                        структурни и инвестиционни фондове.
+                        От област Хасково само Детска градина № 4 е включена в Национална
+                        програма за превенция на  хроничните незаразни болести 2014-2020 г.
+                        В рамките на програмата ще се проведе национално изследване на риска
+                        за здравето, с цел да се установи нивото на разпространение на
+                        рискови фактори.
                     </p>
                 </Col>
                 <Col sm={12} lg={6} data-sal="slide-up" data-sal-duration="1000">
                     <Row>
+                        <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
+                            <div className="m-auto" style={{ 'min-width': `156px` }}>
+                                <Image alt="First Image" filename="proekt-apspo.JPG"  />
+                            </div>
+                            <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
+                                <h2>Проект за развитие</h2>
+                                <p>
+                                    ДГ № 4 работи по проект BG05M2OP001-3.005-0004 „Активно
+                                    приобщаване в системата на предучилищното образование“,
+                                    финансиран от Оперативна програма „Наука и образование за
+                                    интелигентен растеж“.
+                                </p>
+                            </div>
+                        </Col>
                         <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
                             <div className="m-auto" style={{ width: `230px` }}>
                                 <Image alt="First Image" filename="pool.png"  />
@@ -224,22 +238,6 @@ const IndexPage = () => (
                                     През месец март 2020 година в ДГ №4, ще се проведат
                                     мартенски концерти пред родителите на децата и гости от
                                     Общинска администрация гр. Димитровград
-                                </p>
-                            </div>
-                        </Col>
-                        <Col sm={12} className="d-flex flex-column flex-lg-row mt-20 mt-lg-0">
-                            <div className="m-auto" style={{ width: `230px` }}>
-                                <Image alt="First Image" filename="pool.png"  />
-                            </div>
-                            <div className="pl-lg-40" style={{ 'flexShrink': `2`}}>
-                                <h2>Празника на баба Марта</h2>
-                                <p>
-                                    На 28,02,2020г. от 10,00 ч. във Филиал 1 „Радост“ съвместно с
-                                    читалище с. Злато поле.
-                                    На 02,03,2020г. от 10,00 ч. в „Пролет“ съвместно с читалище с.
-                                    Сталево
-                                    На 02,03,2020г. от 10,00 ч. в с. Черногорово съвместно с читалище с.
-                                    Черногорово
                                 </p>
                             </div>
                         </Col>
